@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Assembly Jarrell, TX | Around the House</title>
+  <meta name="description" content="Professional furniture assembly in Jarrell, TX. Get a fast, accurate quote for IKEA, Wayfair, and more.">
+  
+  <link rel="stylesheet" href="./global.css">
+</head>
+<body>
+
+<header class="landing-header">
+  <img src="./assets/images/logo.png" alt="Around the House Logo">
+  <p><a href="index.html" class="main-site-link">Visit our main website</a></p>
+</header>
+
+<main>
+  <section class="hero-assembly">
+    <h1>Professional Furniture Assembly in Jarrell</h1>
+    <p>From IKEA beds to Wayfair desks—we build it so you don't have to.</p>
+    <div class="trust-badges">
+      <span>✓ Family Owned</span>
+      <span>✓ Two-Man Team</span>
+      <span>✓ Jarrell Local</span>
+    </div>
+  </section>
+
+  <section class="quote-form-container">
+    <h2>Get Your Quote Fast</h2>
+    <form id="quoteForm" action="/submit-form" method="POST">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="John Doe" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="(512) 000-0000" required>
+      </div>
+
+      <div class="form-group">
+        <label>Items to Assemble</label>
+        <textarea name="items" rows="3" placeholder="Example: 1 King Bed Frame, 2 Nightstands" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Link to Item(s) or Model # (Optional)</label>
+        <p style="font-size: 0.8rem; color: #777; margin-bottom: 5px;">This ensures a 100% accurate price immediately.</p>
+        <input type="text" name="product_link" placeholder="Amazon/Wayfair link or brand name">
+      </div>
+
+      <div class="form-group">
+        <label>Desired Completion Date</label>
+        <input type="date" name="date_needed">
+      </div>
+
+      <button type="submit" class="cta-primary">Send My Quote Request</button>
+    </form>
+  </section>
+
+  <section class="landing-info-grid">
+    <div>
+      <h3>Why Choose Us?</h3>
+      <p><strong>Around the House</strong> is run by cousins John and Damien. We aren't a giant corporation; we're your neighbors in Jarrell. We show up on time, bring our own tools, and clear away the cardboard boxes when we're done.</p>
+    </div>
+    <div>
+      <h3>What We Handle</h3>
+      <ul>
+        <li>Bed Frames & Dressers</li>
+        <li>Office Desks & Chairs</li>
+        <li>Outdoor Patio Furniture</li>
+        <li>TV Stands & Media Consoles</li>
+        <li>And more!</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="premium-footer">
+  <div class="footer-container">
+    <div class="footer-column brand-info">
+      <img src="./assets/images/logo.png" alt="Around the House Logo" class="footer-logo">
+      <p>Your local Jarrell experts in furniture assembly. Family-owned, neighbor-approved.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Get In Touch</h3>
+      <ul class="footer-contact-list">
+        <li>📱 <a href="tel:2252495700">(225) 249-5700</a></li>
+        <li>📍 Serving Jarrell, TX & Surrounding</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Around the House Services</p>
+    <nav class="footer-legal">
+      <a href="index.html">Main Website</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  setTimeout(function() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '37850653249638202'); 
+    fbq('track', 'PageView');
+
+    var form = document.getElementById('quoteForm');
+    if (form) {
+      form.addEventListener('submit', function() {
+        fbq('track', 'Lead');
+      });
+    }
+  }, 300);
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none" 
+       src="https://www.facebook.com/tr?id=37850653249638202&ev=PageView&noscript=1"/>
+</noscript>
+
+</body>
+</html>
