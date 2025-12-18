@@ -94,34 +94,36 @@
 
   <section id="contact" class="quote-form-container">
     <h2 style="text-align: center; margin-bottom: 30px;">Request a Quote</h2>
-    <form id="quoteForm" class="contact-form" method="POST" action="/submit-form">
-      <div class="form-group">
-        <label>Full Name</label>
-        <input type="text" name="name" required placeholder="John Doe" />
-      </div>
+   <form id="contactForm" class="contact-form" name="general-contact" method="POST" data-netlify="true" action="/success">
+  <input type="hidden" name="form-name" value="general-contact" />
 
-      <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" name="email" required placeholder="john@example.com" />
-      </div>
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required placeholder="John Doe" />
+  </div>
 
-      <div class="form-group">
-        <label>Service Needed</label>
-        <select name="service" style="width: 100%; padding: 12px; border-radius: 12px; border: 2px solid #e2e8f0;">
-            <option value="assembly">Furniture Assembly</option>
-            <option value="washing">Pressure Washing</option>
-            <option value="moving">Furniture Moving</option>
-            <option value="other">Other Help</option>
-        </select>
-      </div>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required placeholder="john@example.com" />
+  </div>
 
-      <div class="form-group">
-        <label>Project Details</label>
-        <textarea name="details" rows="4" placeholder="Tell us about the project!"></textarea>
-      </div>
+  <div class="form-group">
+    <label for="service">Service Needed</label>
+    <select id="service" name="service">
+      <option value="assembly">Furniture Assembly</option>
+      <option value="washing">Pressure Washing</option>
+      <option value="moving">Furniture Moving</option>
+      <option value="other">Other Help</option>
+    </select>
+  </div>
 
-      <button type="submit" class="cta-primary">Submit Request</button>
-    </form>
+  <div class="form-group">
+    <label for="details">Project Details</label>
+    <textarea id="details" name="details" rows="4" placeholder="Tell us about the project!"></textarea>
+  </div>
+
+  <button type="submit" class="cta-primary">Submit Request</button>
+</form>
   </section>
 
 </main>

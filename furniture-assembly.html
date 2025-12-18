@@ -28,35 +28,41 @@
 
   <section class="quote-form-container">
     <h2>Get Your Quote Fast</h2>
-    <form id="quoteForm" action="/submit-form" method="POST">
-      <div class="form-group">
-        <label>Full Name</label>
-        <input type="text" name="name" placeholder="John Doe" required>
-      </div>
-      
-      <div class="form-group">
-        <label>Phone Number</label>
-        <input type="tel" name="phone" placeholder="(512) 000-0000" required>
-      </div>
+   <form id="assemblyQuoteForm" class="quote-form-container" name="furniture-quote" method="POST" data-netlify="true" action="/success">
+  <input type="hidden" name="form-name" value="furniture-quote" />
 
-      <div class="form-group">
-        <label>Items to Assemble</label>
-        <textarea name="items" rows="3" placeholder="Example: 1 King Bed Frame, 2 Nightstands" required></textarea>
-      </div>
+  <div class="form-header" style="text-align: center; margin-bottom: 20px;">
+    <h2>Get a Custom Quote</h2>
+  </div>
 
-      <div class="form-group">
-        <label>Link to Item(s) or Model # (Optional)</label>
-        <p style="font-size: 0.8rem; color: #777; margin-bottom: 5px;">This ensures a 100% accurate price immediately.</p>
-        <input type="text" name="product_link" placeholder="Amazon/Wayfair link or brand name">
-      </div>
+  <div class="form-group">
+    <label for="asm-name">Full Name</label>
+    <input type="text" id="asm-name" name="name" placeholder="John Doe" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="(512) 000-0000" required>
+  </div>
 
-      <div class="form-group">
-        <label>Desired Completion Date</label>
-        <input type="date" name="date_needed">
-      </div>
+  <div class="form-group">
+    <label for="items">Items to Assemble</label>
+    <textarea id="items" name="items" rows="3" placeholder="Example: 1 King Bed Frame, 2 Nightstands" required></textarea>
+  </div>
 
-      <button type="submit" class="cta-primary">Send My Quote Request</button>
-    </form>
+  <div class="form-group">
+    <label for="product_link">Link to Item(s) or Model # (Optional)</label>
+    <p style="font-size: 0.8rem; color: #777; margin-bottom: 5px;">This ensures a 100% accurate price immediately.</p>
+    <input type="text" id="product_link" name="product_link" placeholder="Amazon/Wayfair link or brand name">
+  </div>
+
+  <div class="form-group">
+    <label for="date_needed">Desired Completion Date</label>
+    <input type="date" id="date_needed" name="date_needed">
+  </div>
+
+  <button type="submit" class="cta-primary">Send My Quote Request</button>
+</form>
   </section>
 
   <section class="landing-info-grid">

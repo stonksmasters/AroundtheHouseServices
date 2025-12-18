@@ -233,3 +233,45 @@ body {
     .quote-form-container, .contact-form { margin: -60px 15px 40px; padding: 35px 20px; }
     .hero-assembly h1 { font-size: 2.2rem !important; }
 }
+/* --- SUCCESS PAGE SPECIFIC --- */
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--brand-accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 20px var(--brand-accent-glow);
+    animation: scaleUp 0.5s var(--ease);
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* --- FORM TEXT REFINEMENTS --- */
+.form-header h2 {
+    font-size: 1.8rem;
+    color: var(--brand-deep);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.form-group p {
+    line-height: 1.4;
+    color: var(--text-muted);
+}
+
+/* Fix for Select dropdown appearance */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%230f172a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 18px;
+}
