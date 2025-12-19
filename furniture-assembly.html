@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Furniture Assembly Jarrell, TX | Around the House</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
   <meta name="description" content="Professional furniture assembly in Jarrell, TX. Get a fast, accurate quote for IKEA, Wayfair, and more.">
   
   <link rel="stylesheet" href="./global.css">
@@ -16,7 +17,7 @@
 </header>
 
 <main>
-  <section class="hero-assembly">
+  <section class="hero-assembly-landing">
     <h1>Professional Furniture Assembly in Jarrell</h1>
     <p>From IKEA beds to Wayfair desks—we build it so you don't have to.</p>
     <div class="trust-badges">
@@ -27,8 +28,8 @@
   </section>
 
   <section class="quote-form-container">
-    <h2>Get Your Quote Fast</h2>
-   <form id="assemblyQuoteForm" class="quote-form-container" name="furniture-quote" method="POST" data-netlify="true" action="/success.html">
+   
+   <form id="assemblyQuoteForm" class="assemblyQuoteForm" name="furniture-quote" method="POST" data-netlify="true" action="/success.html">
   <input type="hidden" name="form-name" value="furniture-quote" />
 
   <div class="form-header" style="text-align: center; margin-bottom: 20px;">
@@ -120,7 +121,7 @@
     fbq('init', '37850653249638202'); 
     fbq('track', 'PageView');
 
-    var form = document.getElementById('quoteForm');
+    var form = document.getElementById('assemblyQuoteForm');
     if (form) {
       form.addEventListener('submit', function() {
         fbq('track', 'Lead');
